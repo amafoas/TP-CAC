@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>E-learn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+
+<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+navbar-light = texto negro de la letra
+bg-white = fondo de color blanco
+-->
+
+      <div class="container d-flex justify-content-between align-items-center">
+
+          <a class="navbar-brand h1" href="index.html">
+    <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+              <i class='bx bx-book-bookmark bx-sm text-steal'></i>
+      <!--	bx bx-buildings = icono del logo de la web:
+      http://www.unisvg.com/icon-sets/bx/bx-buildings.html
+      https://boxicons.com/
+      -->
+
+       <span class="text-steal h4">E-</span><span class="text-steal-oscuro h4">Learn</span></a>
+
+    <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0"
+      type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbar-toggler-success"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      </span>
+          </button>
+  <!------------------------------------------- Opciones del Menu		-->
+  <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+  id="navbar-toggler-success">
+
+  <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación
+  por un punto de interrupción principal.
+  flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+  d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios
+  directos en elementos flexibles
+  -->
+                  <div class="flex-fill mx-xl-5 mb-2">
+      <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                   <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-steal">
+        <!--   .navbar-nav para una navegación ligera y de altura completa
+           (incluida la compatibilidad con menús desplegables).-->
+                      <li class="nav-item">
+                          <a class="nav-link btn-outline-steal rounded-pill px-3" href="index.html">Home</a>
+          <!-- px = padding y mx es el margin
+          rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn-outline-steal rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn-outline-steal rounded-pill px-3" href="work.html">Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn-outline-steal rounded-pill px-3" href="pricing.html">Precios</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link btn-outline-steal rounded-pill px-3" href="contact.html">Contáctanos</a>
+                      </li>
+                  </ul>
+              </div>
+
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+              <div class="navbar align-self-center d-flex">
+                  <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-steal'></i></a>
+                  <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-steal'></i></a>
+                  <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-steal'></i></a>
+          <!--	https://iconify.design/icon-sets/bx/-->
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Nuestros Cursos</h1>
+                <h3 class="h4 pb-2 regular-400">Transforma tu vida mediante la educación</h3>
+                <p class="banner-body pb-2 light-300R text-white">
+                    Los mejores instructores de todo el mundo enseñan a millones de estudiantes en E-Learn.
+                    Proporcionamos las herramientas y las habilidades para que aprendas lo que te apasiona.
+                </p>
+               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Consultas</button></a>
+             <a href="about.html"><button type="submit" class="btn rounded-pill btn-steal text-light px-4 light-300">Quienes Somos</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+                <a class="filter-btn btn rounded-pill btn-outline-steal border-0 m-md-2 px-md-4 active" data-filter=".todos" href="#">Todos</a>
+                <a class="filter-btn btn rounded-pill btn-outline-steal border-0 m-md-2 px-md-4" data-filter=".diseno" href="#">Diseño</a>
+                <a class="filter-btn btn rounded-pill btn-outline-steal border-0 m-md-2 px-md-4" data-filter=".desarrollo" href="#">Desarrollo</a>
+                <a class="filter-btn btn rounded-pill btn-outline-steal border-0 m-md-2 px-md-4" data-filter=".fotografia" href="#">Fotografia</a>
+                <a class="filter-btn btn rounded-pill btn-outline-steal border-0 m-md-2 px-md-4" data-filter=".negocios" href="#">navegocios</a>
+            </div>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos diseno">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/cursos/diseno-ill800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Diseño grafico don Adobe Illustrator</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende a crear illustracion de calidad profesional con Adobe Illustrator.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos diseno">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/diseno-pro800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Fundamenso del diseño rofesional</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende los fundamentos utilizados en las artes del Diseño Digital.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos diseno">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/diseno-ps800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Diseño digital con Adobe Photoshop CC</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende a manejar uno de los programas mas usados en el mundo del Diseño Digital.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos desarrollo">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/desarrollo-db800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">MongoDB</h5>
+                        <p class="card-text light-300 text-dark">
+                          Aprende MongoDB una de las base de datos que mas se utiliza en la industria.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos desarrollo">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/desarrollo-machine800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Principios del Machine Learning</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende los algoritmos de Machine Learning con Python para convertirte en un Data Science con todo el código para usar
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos desarrollo">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/desarrollo-poo800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Fundamentos de la programacion orientada a objetos</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprenda desde cero los principios básicos del diseño y programación orientada a objetos utilizando el lenguaje Python 3
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos desarrollo">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/cursos/desarrollo-py800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Python avanzado</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende a aprobechar al maximo las caracteristicas del lenguajes mas usado a nivel global.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos desarrollo">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/desarrollo-react800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">React.js</h5>
+                        <p class="card-text light-300 text-dark">
+                          Aprenderás los mas importantes conceptos y fundamentos acerca de la librería para desarrollo front-end mas famosa del momento
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos fotografia">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/fotografia-comida800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Fotografía de Comida: Capturando la Comida en Tu Cocina</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende a capturar la esencia de cada comida en una imagen, ya sea para tu negocio o para publicar en tus redes.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos fotografia">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/fotografia-retrato800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">El retrato perfecto</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende lo necesario para realizar retratos espectaculares tanto en interiores como en exteriores.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos fotografia">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/cursos/fotografia-master800.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Fotografía Masterclass</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprende todo lo necesario sobre el mundo de la fotografia desde controlar la luz hasta la composicion y mas.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos negocios">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/services-07.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Aprendiendo a ubicar tu negocio</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprenda donde localizar su negocio en funcion de su clientela.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos negocios">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/services-06.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Emprender en tiempo record</h5>
+                        <p class="card-text light-300 text-dark">
+                            Aprenda que cosas hacer y que no cuando emprenda en su propio negocio.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos negocios">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/services-05.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Convierte tus ideas en negocios</h5>
+                        <p class="card-text light-300 text-dark">
+                           Aprende a transformar tus ideas en negocios de altamente solicitados.
+                        </p>
+                        <span class="text-decoration-none text-steal light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-steal text-white">Ant.</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-light">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-steal text-white">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-steal text-white">Sig.</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Footer -->
+    <footer class="bg-steal pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-4 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-book-bookmark bx-sm text-light'></i>
+                        <span class="text-light h5">E-</span><span class="text-light h5 semi-bold-600">Learn</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light"
+                href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
+                href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
+                href="work.html">Cursos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1"
+                href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
+                href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+              href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+              href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-steal0 py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 E-Learn. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+              href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+   <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
